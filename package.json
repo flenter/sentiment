@@ -1,0 +1,33 @@
+{
+	"name": "sentiment",
+	"scripts": {
+		"dev": "wrangler dev src/index.tsx",
+		"deploy": "wrangler deploy --minify src/index.tsx",
+		"db:generate": "drizzle-kit generate",
+		"db:migrate": "tsx migrate.ts",
+		"db:seed": "tsx seed.ts"
+	},
+	"dependencies": {
+		"@fiberplane/hono": "^0.2.0",
+		"@neondatabase/serverless": "^0.9.4",
+		"@types/html-to-text": "^9.0.4",
+		"cheerio": "^1.0.0-rc.12",
+		"diff": "^5.2.0",
+		"dotenv": "^16.4.5",
+		"drizzle-kit": "0.22.1",
+		"drizzle-orm": "^0.31.2",
+		"hono": "^4.4.13",
+		"html-to-text": "^9.0.5",
+		"sentiment": "^5.0.2",
+		"string-strip-html": "^13.4.8",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20240529.0",
+		"@types/diff": "^5",
+		"@types/sentiment": "^5",
+		"postgres": "^3.4.4",
+		"tsx": "^4.16.2",
+		"wrangler": "^3.57.2"
+	}
+}
