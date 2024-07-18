@@ -10,13 +10,7 @@ export const Home: FC = () => {
 };
 
 export const InternalHome = () => {
-  return (<div class="grid grid-cols-12">
-    <div class="col-span-8">
-      <ListSentiments />
-    </div>
-    <div class="col-span-4">
-      <UrlForm />
-    </div>
-  </div>
+  return (
+    <ListSentiments />
   )
 }

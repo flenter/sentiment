@@ -22,3 +22,13 @@ app.get("/sentiments/:url", async (c) => {
     <Sentiment url={url} />
   </Layout>);
 });
+
+app.get("/sentiments/:url/:id", async (c) => {
+  const url = c.req.param("url");
+  const rawId = c.req.param("id");
+  const id = Number.parseInt(rawId, 10);
+
+  return c.html(<Layout context={c}>
+    <Sentiment url={url} id={id} />
+  </Layout>);
+});
