@@ -2,7 +2,7 @@
 
 ![Honc](honc.png)
 
-This is a hono + orm (drizzle) + neon + cloudflare site. That allows you to enter a URL and it will return a sentiment score.
+This is project is thrown together as a hackday(s) project. It allows you to enter a URL and it will return a sentiment score.
 
 Note: 
 * this site has only been tested locally
