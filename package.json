@@ -4,8 +4,7 @@
 		"dev": "wrangler dev src/index.tsx",
 		"deploy": "wrangler deploy --minify src/index.tsx",
 		"db:generate": "drizzle-kit generate",
-		"db:migrate": "tsx migrate.ts",
-		"db:seed": "tsx seed.ts"
+		"db:migrate": "tsx migrate.ts"
 	},
 	"dependencies": {
 		"@fiberplane/hono": "^0.2.0",

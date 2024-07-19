@@ -15,7 +15,7 @@ export const Layout: FC = (
       <body class="bg-gray-800 text-gray-200">
         <div class="flex justify-center h-screen py-2">
           <div class="w-1/2">
-            <div class="rounded border border-slate-600 p-2 grid gap-2">
+            <div class="rounded border border-slate-600 p-2 px-4 grid gap-2">
               <h1 class="text-3xl py-2 font-serif border-b border-slate-600">
                 <a href="/" class=" text-blue-300 hover:underline decoration-1 underline-offset-4">
                   Sentiment
